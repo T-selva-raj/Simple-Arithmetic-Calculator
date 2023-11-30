@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="icon" href="favicon.png"  />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png" width="45px" height="45px">
+        <h1>Online Calculator</h1>
+    </div>
+
+    <div class="container">
+        <form class="calc">
+            <table class="cal">
+                <tr><input type="text" id="screen" ></tr>
+               
+                <tr >
+                    <td><button onclick='v("9")'>9</button></td>
+                    <td><button onclick='v("8")'>8</button></td>
+                    <td><button onclick='v("7")'>7</button></td>
+                    <td><button onclick='v("+")'>+</button></td>
+                </tr>
+                <tr >
+                    <td><button  onclick='v("6")'>6</button></td>
+                    <td><button  onclick='v("5")'>5</button></td>
+                    <td><button  onclick='v("4")'>4</button></td>
+                    <td><button  onclick='v("-")'>-</button></td>
+                </tr>
+                <tr >
+                    <td><button onclick='v("3")'>3</button></td>
+                    <td><button onclick='v("2")'>2</button></td>
+                    <td><button onclick='v("1")'>1</button></td>
+                    <td><button onclick='v("*")'>*</button></td>
+                </tr>
+                <tr>
+                <td><button  onclick='v(".")'>.</button></td>
+                <td><button  onclick='v("0")'>0</button></td>
+                <td><button  onclick='v("/")'>/</button></td>
+                <td><button  onclick='d()'>=</button></td>
+                </tr>  
+            </table>
+            <button id="clear" onclick='del()' >DELETE</button>
+            <button id="clear" onclick='c()' >CLEAR</button>
+
+        </form>
+     </div>
+     <div class="footer">
+        <h1>Created BY  SELVARAJ T.</h1>
+     </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
